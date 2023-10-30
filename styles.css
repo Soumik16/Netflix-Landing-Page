@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,200&family=Qwitcher+Grypen&family=Roboto:wght@900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+#backimg {
+    background: url("netflix_bg.jpg");
+    background-size: cover;
+    height: 707px;
+    border-bottom: 9px solid #222;
+}
+
+.background {
+    background: rgba(0, 0, 0, .4);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .8), transparent 50%, rgba(0, 0, 0, .8));
+    height: 100.1%;
+}
+
+.navbar {
+    display: flex;
+    padding: 25px 155px;
+    margin-bottom: 90px;
+}
+
+.logo {
+    width: 10.4375rem;
+    height: 2.8125rem;
+    margin-right: auto;
+}
+
+#language {
+    margin-right: 20px;
+    border-radius: 5px;
+    background: transparent;
+    padding: 0 10px;
+    height: 32px;
+}
+
+option {
+    background-color: gray;
+}
+
+.signin {
+    background-color: #e50914;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0 14px;
+    border-radius: 5px;
+    height: 32px;
+}
+
+.main {
+    text-align: center;
+    padding: 75px 20px;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+.main p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form div {
+    width: 370px;
+    height: 55px;
+    position: relative;
+}
+
+.form input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1.4px solid #847e7e;
+    padding: 0 20px;
+    color: white;
+}
+
+input:focus {
+    border: 2px solid white;
+}
+
+.form button {
+    width: 205px;
+    font-weight: 600;
+    background-color: #e50914;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.form label {
+    position: absolute;
+    font-size: 1rem;
+    left: 20px;
+    color: gray;
+    top: 20px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+
+
+/* Tv section */
+.TV {
+    background-color: black;
+    border-bottom: 9px solid #222;
+    padding: 70px 45px;
+}
+
+.container {
+    display: flex;
+    max-width: 1150px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.description {
+    width: 50%;
+}
+
+.description p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.tvclip {
+    width: 50%;
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+}
+
+.tvclip img {
+    width: 100%;
+    z-index: 10;
+    max-width: 700px;
+    position: relative;
+}
+
+#Tvvideo {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 73%;
+    height: 55%;
+}
+
+
+
+/* Phone section */
+.phonesection {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-bottom: 9px solid #222;
+}
+
+.phonesection .container {
+    margin-top: 3%;
+    justify-content: space-between;
+}
+
+.mobile img {
+    max-width: 580px;
+}
+
+.mobile {
+    position: relative;
+}
+
+.stranger {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid hsla(0, 0%, 100%, .25);
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translate(-50%);
+}
+
+.stranger img {
+    width: 60px;
+    margin-right: 11px;
+}
+
+.stranger #gif {
+    width: 50px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.stranger span {
+    color: #0071eb;
+    font-size: 0.9rem;
+}
+
+
+
+/* Device section */
+.devices {
+    background-color: black;
+    border-bottom: 9px solid #222;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#devicesclip {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    max-width: 63%;
+    max-height: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Kids section */
+.kids {
+    background-color: black;
+    border-bottom: 9px solid #222;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.kids img {
+    max-width: 50%;
+}
+
+.kids .description {
+    width: 55%;
+}
+
+
+
+/* Question Secton */
+.qst {
+    background-color: black;
+    border-bottom: 9px solid #222;
+    padding: 50px;
+}
+
+.sm-container {
+    margin: 0 auto;
+    max-width: 1300px;
+    text-align: center;
+}
+
+.sm-container h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+}
+
+.sm-container ul {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+li button {
+    background-color: #303030;
+    width: 90%;
+    text-align: start;
+    padding: 30px 20px;
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    margin-top: 8px;
+}
+
+li button img {
+    width: 27px;
+    float: right;
+}
+
+li div {
+    width: 90%;
+    text-align: left;
+    background-color: #303030;
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 25px 20px;
+    margin-bottom: 2px;
+}
+
+li div p:first-child {
+    margin-bottom: 30px;
+}
+
+li:nth-child(2) div p,
+li:nth-child(4) div p,
+li:nth-child(5) div p {
+    margin-bottom: 0;
+}
+
+
+
+/* Footer section */
+footer {
+    background-color: black;
+    padding: 60px 0;
+}
+
+.footercontent {
+    width: 76%;
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+    margin: auto;
+    min-height: 180px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content p a {
+    font-size: 1rem;
+}
+
+.content li {
+    float: left;
+    width: 25%;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.footercontent p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+footer select {
+    width: 140px;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 950px) {
+    #backimg {
+        height: 530px;
+    }
+
+    .logo {
+        width: 88px;
+    }
+
+    .navbar {
+        padding: 20px 30px;
+        padding-bottom: 70px;
+        margin-bottom: 0;
+    }
+
+    .logo {
+        width: 100px;
+        height: 35px;
+    }
+
+    #language {
+        margin-right: 7px;
+    }
+
+    .main h1 {
+        font-size: 2rem;
+    }
+
+    .main p {
+        font-size: 1.19rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+        padding: 0 12px;
+    }
+
+    .tvclip,
+    .description {
+        width: 100%;
+    }
+
+    .kids .description {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .description p {
+        font-size: 1.1rem;
+    }
+
+    .phonesection .container,
+    .kids .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .phonesection img {
+        max-width: 100%;
+    }
+
+    .stranger {
+        width: 60%;
+        padding: 8px 10px;
+    }
+
+    .stranger img {
+        width: 12%;
+    }
+
+    .stranger #gif {
+        margin-right: 0;
+    }
+
+    .stranger p {
+        font-size: 0.9rem;
+    }
+
+    .stranger span {
+        margin-right: 0;
+    }
+
+    .kids img {
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .qst {
+        padding: 70px 0px;
+    }
+
+    .sm-container h1 {
+        font-size: 2rem;
+    }
+
+    .question div,
+    .question button {
+        font-size: 1.2rem;
+    }
+
+    .question button img {
+        width: 22px;
+    }
+
+    li button {
+        padding: 25px 20px;
+    }
+
+    .sm-container form {
+        margin: 0 20px;
+    }
+
+    .content li {
+        width: 50%;
+    }
+
+    footer {
+        padding: 10px 30px;
+        padding-bottom: 30px;
+    }
+
+    .footercontent {
+        width: 100%;
+    }
+
+    .content {
+        min-height: 300px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .main {
+        padding-bottom: 0;
+    }
+
+    .navbar {
+        padding: 20px 20px;
+        margin-bottom: 0;
+    }
+
+    .form {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form button {
+        font-size: 1.2rem;
+        height: 50px;
+        width: 170px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    #backimg {
+        height: 540px;
+    }
+
+    .TV,
+    .phonesection,
+    .devices,
+    .kids {
+        padding: 50px 0;
+    }
+}
