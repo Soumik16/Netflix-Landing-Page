@@ -5,4 +5,4 @@
 
 ### Screenshot of the site
 
-![Alt Text]()
+![Alt Text](https://github.com/Soumik16/Netflix-Landing-Page/blob/main/Netflix_Screenshot.png?raw=true)
